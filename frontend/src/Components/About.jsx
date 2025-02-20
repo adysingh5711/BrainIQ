@@ -4,6 +4,13 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import GautamImage from "../assets/Gautam.jpeg";
+import LokendraImage from "../assets/Lokendra.jpeg";
+import AdityaImage from "../assets/Aditya.jpg";
+import OmImage from "../assets/Om.jpeg";
+import AmanImage from "../assets/Aman.jpeg";
+import SonaliImage from "../assets/Sonali.jpeg";
+
 const teamMembers = [
   {
     name: "Gautam Sharma",
@@ -11,7 +18,8 @@ const teamMembers = [
     responsibilities:
       "Responsible for implementing the overall architecture and the system end to end",
     linkedinLink: "https://www.linkedin.com/in/gautam-sharma-8a1a3624b/",
-    gihubLink: "https://github.com/GautamSh30",
+    githubLink: "https://github.com/GautamSh30",
+    image: GautamImage,
   },
   {
     name: "Lokendra Tiwari",
@@ -20,6 +28,7 @@ const teamMembers = [
       "Responsible for implementing the overall architecture and the system end to end",
     linkedinLink: "https://www.linkedin.com/in/lokendratiwari/",
     githubLink: "https://github.com/lokendra22844",
+    image: LokendraImage,
   },
   {
     name: "Aditya Singh",
@@ -28,6 +37,7 @@ const teamMembers = [
       "Responsible for designing the entire frontend UI and making enhancing the frontend ",
     linkedinLink: "https://www.linkedin.com/in/singhaditya5711/",
     githubLink: "",
+    image: AdityaImage,
   },
   {
     name: "Om Singh",
@@ -35,6 +45,7 @@ const teamMembers = [
     responsibilities: "Responsible for building the machine learning prospects",
     linkedinLink: "https://www.linkedin.com/in/om-singh-280827257/",
     githubLink: "",
+    image: OmImage,
   },
   {
     name: "Aman Jha",
@@ -42,6 +53,7 @@ const teamMembers = [
     responsibilities: "Responsible for AI integrations in our platform ",
     linkedinLink: "https://www.linkedin.com/in/aman-kumar-jha-461409286/",
     githubLink: "https://github.com/i-aman-jha",
+    image: AmanImage,
   },
   {
     name: "Sonali",
@@ -50,6 +62,7 @@ const teamMembers = [
       "Responsible for improvising ideas and features for improving the overall system",
     linkedinLink: "",
     githubLink: "",
+    image: SonaliImage,
   },
 ];
 
@@ -59,7 +72,7 @@ function TeamMember({
   responsibilities,
   image,
   linkedinLink,
-  gihubLink,
+  githubLink
 }) {
   return (
     <div className="bg-white p-6 rounded-xl shadow-md m-4 max-w-xs">
@@ -78,7 +91,7 @@ function TeamMember({
           <Link to={linkedinLink}>
             <LinkedInIcon />
           </Link>
-          <Link to={gihubLink}>
+          <Link to={githubLink}>
             <GitHubIcon />
           </Link>
         </div>
