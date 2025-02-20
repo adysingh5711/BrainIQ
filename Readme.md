@@ -48,7 +48,7 @@ BrainIQ is an innovative educational platform designed to provide users with a s
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/brainiq.git
+git clone https://github.com/adysingh5711/BrainIQ.git
 cd brainiq
 ```
 
@@ -67,9 +67,9 @@ cd brainiq
    VITE_API_URL=http://localhost:5000/v1/
    ```
 4. Start the development server:
-   ```bash
-npm run dev
-   ```
+    ```bash
+   npm run dev
+    ```
 
 ### Backend Setup
 
